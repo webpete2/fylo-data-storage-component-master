@@ -1,0 +1,246 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0vw 50vh;
+
+    font-size: 14px;
+    font-family: 'Raleway';
+}
+
+main {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    background-color: hsl(228, 56%, 26%);
+
+    margin-right: 1.5rem;
+
+    padding-left: 2rem;
+    padding-right: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    height: 13rem;
+
+    box-sizing: border-box;
+}
+
+.options {
+    display: flex;
+
+    margin-top: 2.5rem;
+}
+
+.options img {
+    height: 20px;
+    width: 20px;
+
+    transition: all .2s ease;
+}
+
+
+.options img:hover {
+    cursor: pointer;
+
+    height: 25px;
+    width: 25px;
+}
+
+.placeholder {
+    margin-right: 1rem;
+
+    background-color: hsl(229, 57%, 11%);
+
+    padding: 0.7rem;
+
+    border-radius: 8px;
+}
+
+.placeholder:hover {
+    cursor: pointer;
+
+    background-color: hsl(243, 100%, 93%);
+}
+
+.storage {
+    position: relative;
+
+    background-color: hsl(228, 56%, 26%);
+
+    height: 10rem;
+    width: 35rem;
+
+    padding: 2.5rem;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    margin-top: auto;
+}
+
+.user-used {
+    color: white;
+}
+
+.limit {
+    background-color: hsl(229, 57%, 11%);
+
+    height: 1rem;
+    width: 100%;
+
+    padding: 0.2rem;
+
+    border-radius: 10px;
+}
+
+.used {
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    height: 100%;
+    width: 81.5%;
+
+    border-radius: 10px;
+
+    padding: 0.1rem;
+
+    box-sizing: border-box;
+}
+
+.tracker {
+    background-color: white;
+
+    height: 100%;
+    width: 0.7rem;
+
+    border-radius: 50%;
+
+    margin-left: auto;
+}
+
+.markers {
+    display: flex;
+
+    color: white;
+}
+
+.max {
+    margin-left: auto;
+}
+
+.data-bubble {
+    position: absolute;
+
+    top: -0.5rem;
+    left: 43rem;
+
+    width: 12rem;
+
+}
+
+.square {
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    width: 100%;
+    height: 6rem;
+
+    padding: 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.number {
+    color: black;
+
+    font-size: 3rem;
+    font-weight: 600;
+
+    margin-right: 1rem;
+}
+
+.phrase {
+    color: hsl(229, 7%, 55%);
+
+    font-size: 0.9rem;
+    font-weight: 650;
+
+    letter-spacing: 1px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+
+    border-left: 30px solid transparent;
+    border-top: 30px solid white;
+
+    margin-left: auto;
+}
+
+@media only screen and (width <=1000px) {
+    body {
+        background-image: url("bg-mobile.png");
+        background-position: 0vw 8vh;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 23rem;
+
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .storage {
+        width: 23rem;
+
+        padding-bottom: 10rem;
+    }
+
+    .user-used {
+        text-align: center;
+    }
+
+    .data-bubble {
+        top: 23rem;
+        left: 5.5rem;
+    }
+
+    .triangle {
+        border-left: none;
+        border-top: none;
+
+        margin-left: 0;
+    }
+}
